@@ -1293,10 +1293,7 @@ def main():
     for index, item in enumerate(bed_util):        # length of delivery patients tured away
         ws.write(21, index+1, item)
 
-    wb.save('example_3_2.xls')
-
-
-""" for checking the parameters use this code for single replication"""
+    wb.save('Outputs.xls')
 
 
 if __name__ == '__main__':
