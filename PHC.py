@@ -1302,19 +1302,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-bed.print_statistics()
-print ("Failed count ", fail_count)
-print("OPD q length of stay std:", waitingline_OPD.length_of_stay.std())
-print("Max los OPD q", waitingline_OPD.length_of_stay.maximum())
-print("std dev of OPD q los", np.std(waitingline_OPD.length_of_stay.x()))
-print("OPD q waiting time mean", waitingline_OPD.length_of_stay.mean())
-print("Mean length of OPD Queue: ", waitingline_OPD.length.mean())
 
-print("OPD q waiting time for replications", OPD_q_waiting_time_list)
-print ("Average OPD q length for replications", OPD_q_length_list)
-
-print("Mean of waiting time OPD q", np.mean(OPD_q_waiting_time_list))
-print ("Doctor time : ", sum(Patient.doc_service_time))
-
-print ("Doc occ:", doc_occupancy)
-print ("Del bed occ list", delivery_bed_occ_list)
